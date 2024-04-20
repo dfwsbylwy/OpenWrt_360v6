@@ -30,7 +30,8 @@ function git_sparse_clone() {
 }
 
 添加自定义lede luci app
-git_sparse_clone master https://github.com/coolsnowwolf/luci applications/luci-app-zerotier applications/luci-app-webadmin applications/luci-app-usb-printer applications/luci-app-qbittorrent applications/luci-app-cpufreq
+git_sparse_clone master https://github.com/coolsnowwolf/luci applications/luci-app-zerotier applications/luci-app-webadmin applications/luci-app-usb-printer applications/luci-app-cpufreq
+git clone --depth=1 https://github.com/sbwml/luci-app-qbittorrent package
 
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
