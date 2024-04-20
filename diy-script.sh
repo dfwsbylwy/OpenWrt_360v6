@@ -29,6 +29,9 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
+添加lede luci app
+git clone --depth=1 https://github.com/coolsnowwolf/luci feeds/ledeluci
+
 # 添加额外插件
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
 git clone --depth=1 -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush package/luci-app-serverchan
