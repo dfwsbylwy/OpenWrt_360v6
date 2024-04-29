@@ -21,7 +21,7 @@ function git_sparse_clone() {
 }
 
 添加自定义lede luci app
-git_sparse_clone master https://github.com/coolsnowwolf/luci applications/luci-app-zerotier applications/luci-app-webadmin applications/luci-app-usb-printer 
+git_sparse_clone master https://github.com/coolsnowwolf/luci applications/luci-app-zerotier applications/luci-app-webadmin applications/luci-app-usb-printer applications/luci-app-vsftpd
 #applications/luci-app-cpufreq
 #git clone --depth=1 https://github.com/sbwml/luci-app-qbittorrent package/luci-app-qbittorrent
 
