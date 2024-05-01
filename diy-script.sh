@@ -21,8 +21,7 @@ function git_sparse_clone() {
 }
 
 添加自定义lede luci app
-git_sparse_clone master https://github.com/coolsnowwolf/luci applications/luci-app-zerotier applications/luci-app-webadmin applications/luci-app-usb-printer applications/luci-app-vsftpd
-#applications/luci-app-cpufreq
+git_sparse_clone master https://github.com/coolsnowwolf/luci applications/luci-app-zerotier applications/luci-app-webadmin applications/luci-app-usb-printer applications/luci-app-vsftpd applications/luci-app-cpufreq
 #git clone --depth=1 https://github.com/sbwml/luci-app-qbittorrent package/luci-app-qbittorrent
 
 
@@ -36,4 +35,4 @@ find package/*/ -maxdepth 2 -path "*/Makefile" | xargs -i sed -i 's/PKG_SOURCE_U
 find package/*/ -maxdepth 2 -path "*/Makefile" | xargs -i sed -i 's/PKG_SOURCE_URL:=@GHCODELOAD/PKG_SOURCE_URL:=https:\/\/codeload.github.com/g' {}
 
 ./scripts/feeds update -a
-./scripts/feeds install -a
+./scripts/feeds install -a 
